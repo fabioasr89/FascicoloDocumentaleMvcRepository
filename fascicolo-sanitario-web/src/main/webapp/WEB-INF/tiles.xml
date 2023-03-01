@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC 
+ "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+ "http://tiles.apache.org/dtds/tiles-config_3_0.dtd"> 
+
+       <tiles-definitions>
+       	<definition name="baselayout" template="/WEB-INF/layout/baselayout.jsp">
+       		<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+       		<put-list-attribute name="cssList">
+       		<add-attribute value="static/css/bootstrap-italia.min.css"/>
+       		
+       		</put-list-attribute>
+       		
+       		<put-list-attribute name="jsList">
+       			<add-attribute value="static/js/jQuery.js" />
+       			<add-attribute value="static/js/bootstrap-italia.min.js"/>
+       		</put-list-attribute>
+       	
+       	</definition>
+       	
+       	<definition name="home" extends="baselayout">
+       		<put-attribute name="titolo" value="home" />
+       		<put-attribute name="body" value="/WEB-INF/view/home.jsp" />
+       	</definition>
+       </tiles-definitions>
