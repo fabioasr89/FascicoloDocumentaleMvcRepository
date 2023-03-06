@@ -1,3 +1,3 @@
 <div class="body">
-<p>Questa è la homa</p>
+<p>Questa è la home</p>
 </div>

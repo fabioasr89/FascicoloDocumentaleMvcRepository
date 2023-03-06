@@ -1,15 +1,20 @@
 package com.fabio.fascicolosanitario.web.entity;
 
+
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+
+
 @Entity
 @Table(name="utente")
-public class UtenteEntity {
-	
+public class UtenteEntity{
+
 	@Id
 	@Column(name="id")
 	private String idUtente;
@@ -21,6 +26,7 @@ public class UtenteEntity {
 	private String password;
 	
 	@ManyToOne
+	@JoinColumn(name = "fk_ruolo")
 	private RuoloEntity ruolo;
 
 	public String getIdUtente() {
@@ -54,6 +60,8 @@ public class UtenteEntity {
 	public void setRuolo(RuoloEntity ruolo) {
 		this.ruolo = ruolo;
 	}
+
+	
 	
 	
 }

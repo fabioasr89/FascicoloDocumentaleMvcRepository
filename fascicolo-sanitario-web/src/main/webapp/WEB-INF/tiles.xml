@@ -18,8 +18,15 @@
        	
        	</definition>
        	
+       	
        	<definition name="home" extends="baselayout">
        		<put-attribute name="titolo" value="home" />
        		<put-attribute name="body" value="/WEB-INF/view/home.jsp" />
        	</definition>
+       	
+       	<definition name="error" extends="baselayout">
+       		<put-attribute name="titolo" value="home" />
+       		<put-attribute name="body" value="/WEB-INF/view/error.jsp" />
+       	</definition>
+       	
        </tiles-definitions>
